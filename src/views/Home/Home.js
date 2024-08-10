@@ -9,7 +9,7 @@ function Home() {
 
     const loadPlants= async ()=>{
         toast.loading("Loading plants...")
-        const response = await axios.get(`http://localhost:5000/plants`)
+        const response = await axios.get(`https://nursery-0u93.onrender.com/plants`)
         toast.dismiss()
 
         toast.success("Plants loaded successfully")
