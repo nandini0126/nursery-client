@@ -1,0 +1,20 @@
+body{
+    background-color: #b3ffb3;
+    color:  #006600;
+}
+.plant-title{
+    text-align: center;
+    color: #006600;
+}
+.btn-add{
+    height: 70px;
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+    z-index: 10;
+}
+.plant-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}

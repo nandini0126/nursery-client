@@ -1,0 +1,47 @@
+
+.card{
+    width: 400px;
+    background-color: #f5bdda;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color:  #006600;
+    box-shadow: 0 0 20px 2px #b01c68;
+    position: relative;
+    
+}
+.plant-img{
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.desc{
+    margin-bottom: 80px;
+}
+.price-cate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-btn{
+    padding: 3px 10px;
+    background-color: #b3ffb3;
+    color: #006600;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 15px;
+    box-shadow: 0px 2px 10px 2px #006600;
+    cursor: pointer;
+    margin: 20px;
+    text-decoration: none;
+}
+.btn-div{
+    position: absolute;
+    bottom: 5px;
+}
+.txt-none{
+    text-decoration: none;
+    color: #006600;
+}

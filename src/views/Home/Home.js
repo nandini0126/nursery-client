@@ -3,6 +3,8 @@ import "./Home.css"
 import PlantCard from '../../components/PlantCard/PlantCard'
 import axios from 'axios'
 import toast,{Toaster} from 'react-hot-toast'
+import AddImg from "./add-img.png"
+import { Link } from 'react-router-dom'
 
 function Home() {
     const [plants,setPlants]= useState([])
@@ -22,8 +24,8 @@ function Home() {
 
   return (
     <div>
-        <h1>Plants</h1>
-
+        <h1 className='plant-title'>Plants</h1>
+        <div className='plant-container'>
         {
             plants.map((plant,i)=>{
                 const {_id,
@@ -35,10 +37,13 @@ function Home() {
 
                 return <PlantCard key={i} _id={_id} 
                 name={name} category={category} image={image} price={price}
-                description={description}/>
+                description={description} loadPlants={loadPlants}/>
             })
         }
+        </div>
         <Toaster/>
+        <Link to="/add"><img src={AddImg} className='btn-add' alt='img'/>
+        </Link>
     </div>
   )
 }
